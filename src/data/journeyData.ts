@@ -93,36 +93,39 @@ export const JOURNEY_CHAPTERS: Record<string, JourneyChapterData> = {
 export const DIARY_PAGES: DiaryPage[] = [
   {
     pageNumber: 1,
-    date: '14th October, Twilight',
-    title: 'On Beginnings',
+    date: 'এক সন্ধ্যা — সময়টা মনে নেই',
+    title: 'শুরুগুলো আসলে কখন শুরু হয়?',
     content: [
-      'Some stories do not start with a grand gesture or loud words.',
-      'They begin in the quiet pauses between conversations, in memories that linger long after the night has passed.',
-      'If you are reading this page, you have paid attention to details most people overlook.',
+      'মাঝে মাঝে এমন হয়—অনেক দিন পর আমরা হঠাৎ বুঝতে পারি, কোনো একটা বড় গল্প আসলে অনেক আগেই শুরু হয়ে গিয়েছিল, শুধু আমরা তখন এর কোনো নাম দিইনি।',
+      'কোনো নাটকীয় মুহূর্ত ছিল না। কেউ কোনো ঘোষণা দেয়নি।',
+      'শুধু কিছু সাধারণ দিনের সাধারণ কথাবার্তা। আর কিছু মুহূর্ত, যা মন থেকে মুছে যাওয়ার কথা ছিল, কিন্তু কোনো এক অজানা কারণে তারা থেকে গিয়েছিল।',
+      'সেই সময়টায় আমি বুঝিনি, এই ছোট ছোট মুহূর্তগুলোই একদিন এত বড় হয়ে উঠবে।',
     ],
-    marginNote: 'The first key is awareness.',
+    marginNote: 'কিছু শুরু হওয়ার জন্য শব্দের প্রয়োজন হয় না।',
   },
   {
     pageNumber: 2,
-    date: '28th November, Midnight',
-    title: 'The Unsent Thoughts',
+    date: 'এক গভীর রাত — ঘুম আসেনি',
+    title: 'কিছু কথা নিজের কাছেই থেকে যায়',
     content: [
-      'I kept a ledger of moments I never spoke aloud.',
-      'Every time a realization struck, I folded it neatly and stored it away in this sanctuary.',
-      'We often hide our deepest emotions not because we fear them, but because they are too precious for careless eyes.',
+      'মানুষের কিছু অদ্ভুত স্বভাব থাকে। যেমন, কারও খুব ছোট ছোট বিষয়গুলো মনে রাখা।',
+      'কথা বলার একটা বিশেষ ভঙ্গি, মুখের কোনো একটা ছোট অভিব্যক্তি, কিংবা এমন কোনো সাধারণ মুহূর্ত—যার আসলে কোনো অর্থই হওয়ার কথা নয়।',
+      'মাঝে মাঝে চারপাশের সবকিছু যখন খুব শান্ত হয়ে আসে, তখন এই টুকরো স্মৃতিগুলো কেন বারবার ফিরে আসে?',
+      'আমি জানি না এর উত্তর কী। কিছু মানুষকে মনে রাখার কোনো কারণ খুঁজে পাওয়া যায় না। তারা শুধু থেকে যায়।',
     ],
-    marginNote: 'Cipher digit #1: 7',
+    marginNote: 'যা ভুলে যাওয়ার কথা ছিল, সেটাই সবচেয়ে বেশি মনে রয়ে গেল।',
   },
   {
     pageNumber: 3,
-    date: '3rd January, Cold Dawn',
-    title: 'The Turning of Time',
+    date: 'শীতের এক ভোর — ফজরের আগের নীরবতা',
+    title: 'নিজেকে বোঝানোর চেষ্টা',
     content: [
-      'A year turns, yet certain feelings remain unbothered by calendar dates.',
-      'Look toward the desk ahead. The brass key rests inside the envelope sealed in burgundy wax.',
-      'The journey is almost complete. Proceed with quiet intent.',
+      'কখনো কখনো মন এমন এক দিকে ছুটে যায়, যেখানে মাথা তাকে আটকাতে পারে না।',
+      'আমি নিজেকে বারবার বলি, সব অনুভূতির কোনো গন্তব্য থাকতে নেই। সব কথার উত্তর খোঁজারও দরকার নেই। যা বলা যায় না, তা আল্লাহর কাছেই ছেড়ে দেওয়া ভালো।',
+      'যদি কোনো কিছু আমার জন্য না-ও লেখা থাকে, তবুও আমাকে শোকর করতে হবে এবং তাঁর ফয়সালা মেনে নিতে হবে। আমি এই সীমানাটা খুব ভালো করেই জানি।',
+      'কিন্তু এত নিয়মের পরেও, একটা নির্দিষ্ট অস্তিত্ব বারবার চিন্তায় ফিরে আসে। হয়তো কিছু উত্তর মানুষের কাছে নয়, সময়ের কাছে রেখে দিতে হয়।',
     ],
-    marginNote: 'Cipher digit #2: 3',
+    marginNote: 'নিজেকে থামানোও কখনো কখনো এক ধরনের ভালোবাসা।',
   },
 ];
 
@@ -156,26 +159,32 @@ export const ROOM_OBJECTS: RoomObject[] = [
 export const TIMELINE_MEMORIES: TimelineNode[] = [
   {
     id: 'm1',
-    date: 'Chapter I',
-    title: 'The First Encounter',
-    snippet: 'A glance that lasted a fraction longer than necessary...',
-    fullMemory: 'It was a simple evening. Nothing signaled that the world had subtly shifted on its axis, yet looking back, everything changed right there.',
+    date: '১১ আগস্ট ২০২৪',
+    title: 'প্রথম অনুভূতির আবির্ভাব',
+    snippet:
+      'তোমাকে প্রথম দেখার দিন নয়—তোমাকে তো জন্মের পর থেকেই দেখেছি। কিন্তু আমার ভেতরে তোমাকে ঘিরে অন্যরকম এক অনুভূতির প্রথম আবির্ভাব হয়েছিল একটি স্বপ্নে...',
+    fullMemory:
+      'তোমাকে প্রথম দেখার কোনো নির্দিষ্ট দিন আমার মনে নেই। কারণ তুমি আমার জীবনে এসেছিলে অনেক আগেই—জন্মের পর থেকেই, আপন একজন মানুষ হিসেবেই। তোমাকে দেখেছি, চিনেছি, জেনেছি; কিন্তু তখন তোমাকে ঘিরে মনের ভেতর আলাদা কোনো অনুভূতি ছিল না।\n\nতারপর এলো ১১ আগস্ট ২০২৪। একটি স্বপ্ন—যে স্বপ্নটাকে হয়তো অন্য অনেক স্বপ্নের মতো ভুলে যাওয়ার কথা ছিল। অথচ সেটাই কেন জানি আমার মনে অন্যরকম একটা ছাপ রেখে গেল। ঘুম ভাঙার পরও সেই অনুভূতিটা সহজে কাটছিল না। তোমাকে যেন হঠাৎ করেই একটু অন্যভাবে অনুভব করছিলাম।\n\nএরপরও তোমাকে নিয়ে আরও অনেক স্বপ্ন দেখেছি। হয়তো আরও দেখব। কিন্তু সেগুলোর মধ্যে ১১ আগস্ট ২০২৪-এর সেই স্বপ্নটাই ছিল প্রথম—যেদিন তোমাকে নিয়ে আমার ভেতরে এমন এক অনুভূতির প্রথম আবির্ভাব হয়েছিল, যার কোনো নাম তখনও আমি জানতাম না।\n\nসেদিন কোনো কিছু ঘোষণা হয়নি, কোনো গল্পও শুরু হয়নি। শুধু মনের একেবারে অচেনা কোনো কোণে খুব নিঃশব্দে একটি অনুভূতি জন্ম নিয়েছিল। আর আজ এতদিন পর ফিরে তাকালে মনে হয়, হয়তো সেই ছোট্ট স্বপ্নটাই ছিল এই দীর্ঘ নীরব গল্পের প্রথম পৃষ্ঠা।',
     isUnlockedDefault: true,
   },
   {
     id: 'm2',
-    date: 'Chapter II',
-    title: 'Conversations in the Dark',
-    snippet: 'When hours felt like minutes and silence felt effortless...',
-    fullMemory: 'We spoke of ordinary things, yet beneath the words lay a deep, undeniable understanding that needed no explanation.',
+    date: 'অধ্যায় II',
+    title: 'নীরবে বদলে যাওয়া অনুভূতি',
+    snippet:
+      'একটি স্বপ্নের পর সবকিছু বদলে যায়নি; বরং সময়ের সঙ্গে সঙ্গে অনুভূতিটা নিজের অজান্তেই আরও গভীরে যেতে শুরু করেছিল...',
+    fullMemory:
+      'সেই স্বপ্নের পর সবকিছু একদিনে বদলে যায়নি। জীবন নিজের মতোই চলেছে, আমিও নিজের মতোই থেকেছি। কিন্তু কোথাও যেন খুব অল্প অল্প করে কিছু একটা বদলাতে শুরু করেছিল।\n\nতোমাকে নিয়ে আলাদা করে ভাবার কোনো কারণ খুঁজে পেতাম না। তবু কোনো ছোট্ট কথা, কোনো সাধারণ মুহূর্ত, কিংবা তোমার খুব স্বাভাবিক কোনো উপস্থিতিও কখনো কখনো মনে অদ্ভুত একটা ছাপ রেখে যেত।\n\nমাঝে মাঝে নিজেকেই প্রশ্ন করতাম—কেন এমন হচ্ছে? কেন তোমার কিছু সাধারণ ব্যাপারও অন্যরকমভাবে মনে থেকে যাচ্ছে? কেন তোমাকে নিয়ে ভাবনাগুলোকে চাইলেও পুরোপুরি এড়িয়ে যেতে পারছি না?\n\nহয়তো তখনও আমি নিজের অনুভূতিটাকে ঠিকভাবে বুঝতে পারিনি। শুধু এটুকু বুঝেছিলাম—১১ আগস্টের সেই স্বপ্নটা হয়তো কেবল একটি স্বপ্ন হয়ে থাকেনি। তার পর থেকে আমার ভেতরে খুব নিঃশব্দে কিছু একটা বেড়ে চলেছে।',
     isUnlockedDefault: true,
   },
   {
     id: 'm3',
-    date: 'Chapter III',
-    title: 'The Quiet Realization',
-    snippet: 'Understanding what was held in secret all along...',
-    fullMemory: 'Realizing that some bonds are forged silently, enduring beyond distance and time. This sanctuary was created to preserve that exact feeling.',
+    date: 'অধ্যায় III',
+    title: 'যে অনুভূতিকে আর অস্বীকার করা গেল না',
+    snippet:
+      'একসময় বুঝতে হলো—এটা শুধু কোনো স্বপ্নের রেশ নয়; অনেকদিন ধরে নীরবে বেড়ে ওঠা এক গভীর মহব্বত...',
+    fullMemory:
+      'একসময় এসে নিজের কাছেই আর লুকিয়ে রাখা সম্ভব হলো না যে, এই অনুভূতিটা শুধু কোনো স্বপ্নের রেশ কিংবা সাময়িক ভালো লাগা নয়। সময়ের সঙ্গে সঙ্গে এটা আরও গভীর হয়েছে, অথচ বাইরে থেকে হয়তো তার কিছুই বোঝা যায়নি।\n\nআমি বরাবরই নিজের অনুভূতিকে সংযত রাখতে চেয়েছি। নিজেকে বোঝানোর চেষ্টা করেছি—সব অনুভূতির প্রকাশ প্রয়োজন নেই, সব চাওয়ার পেছনে ছুটতে হয় না। কিছু বিষয়কে আল্লাহর ওপর ছেড়ে দিতে হয়।\n\nতবু যতই নিজেকে বুঝিয়েছি, তোমার জন্য মনের ভেতর তৈরি হওয়া সেই অচিন টানটাকে অস্বীকার করতে পারিনি। বরং বুঝেছি, কিছু অনুভূতি মানুষের ইচ্ছায় তৈরি হয় না, আবার মানুষের ইচ্ছাতেই শেষও হয় না।\n\n১১ আগস্ট ২০২৪-এর সেই প্রথম স্বপ্ন থেকে শুরু করে পরের অসংখ্য স্বপ্ন, অসংখ্য নীরব মুহূর্ত—সব মিলিয়ে কখন যে সেই অনুভূতি এতটা গভীর হয়ে গেল, তা হয়তো আমিও বুঝতে পারিনি। শুধু একসময় এসে বুঝলাম, এর নাম হয়তো ভালোবাসার চেয়েও একটু বেশি কিছু—আমার কাছে এটা মহব্বত।\n\nআর হয়তো এই কারণেই এই ছোট্ট যাত্রার প্রতিটি পৃষ্ঠা এত যত্ন করে রেখে দেওয়া।',
     isUnlockedDefault: false,
   },
 ];

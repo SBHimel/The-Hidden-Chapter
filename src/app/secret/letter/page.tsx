@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft, Home, Sparkles } from 'lucide-react';
 import ParchmentLetter from '@/components/secret/ParchmentLetter';
+import HandwrittenLetterSection from '@/components/secret/HandwrittenLetterSection';
 import LetterReplySection from '@/components/secret/LetterReplySection';
 
 export default function FinalLetterPage() {
@@ -24,8 +25,11 @@ export default function FinalLetterPage() {
           </p>
         </div>
 
+        {/* Handwritten Original Letter Section */}
+        <HandwrittenLetterSection />
         {/* Parchment Letter Component */}
         <ParchmentLetter />
+
 
         {/* Reply Section */}
         <LetterReplySection />

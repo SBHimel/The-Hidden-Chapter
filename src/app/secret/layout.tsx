@@ -2,9 +2,40 @@
 
 import { SecretJourneyProvider, useSecretJourney } from '@/context/SecretJourneyContext';
 import AmbientCanvas from '@/components/ui/AmbientCanvas';
-import { LogOut, RotateCcw, Flame, ChevronRight, Lock } from 'lucide-react';
+import { LogOut, RotateCcw, Flame, Lock, ChevronLeft } from 'lucide-react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
+
+// Strict one-chapter-back route mapping for the Secret Journey
+const PREVIOUS_CHAPTER_MAP: Record<string, string> = {
+  '/secret/clue-1': '/secret/intro',
+  '/secret/clue-2': '/secret/clue-1',
+  '/secret/diary': '/secret/clue-2',
+  '/secret/room': '/secret/diary',
+  '/secret/archive': '/secret/room',
+  '/secret/locked-door': '/secret/archive',
+  '/secret/letter': '/secret/locked-door',
+};
+
+function SecretBackButton() {
+  const pathname = usePathname();
+  const cleanPath = pathname?.replace(/\/$/, '') || '';
+  const prevRoute = PREVIOUS_CHAPTER_MAP[cleanPath];
+
+  if (!prevRoute) return null;
+
+  return (
+    <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 pt-3 pb-0 flex items-center justify-start relative z-30">
+      <Link
+        href={prevRoute}
+        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-serif text-[#A99A7C] hover:text-[#F3E7CC] bg-[#1a140e]/85 hover:bg-[#2c1f15] border border-[#A9824A]/30 hover:border-[#C9A45C]/60 transition-all duration-200 group shadow-md"
+      >
+        <ChevronLeft className="w-3.5 h-3.5 text-[#C9A45C] group-hover:-translate-x-0.5 transition-transform" />
+        <span>আগের অধ্যায়ে ফিরে যাও</span>
+      </Link>
+    </div>
+  );
+}
 
 function SecretHeader() {
   const router = useRouter();
@@ -77,8 +108,10 @@ export default function SecretLayout({ children }: { children: React.ReactNode }
       <div className="min-h-screen flex flex-col bg-[#12110E] text-[#F3E7CC] relative font-sans">
         <AmbientCanvas intensity="medium" />
         <SecretHeader />
+        <SecretBackButton />
         <main className="flex-1 relative z-10">{children}</main>
       </div>
     </SecretJourneyProvider>
   );
 }
+
