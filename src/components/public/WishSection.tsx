@@ -88,7 +88,7 @@ export default function WishSection() {
       <div className="p-8 rounded-xl bg-[#1A1612] border border-[#A9824A]/15 text-center space-y-4 max-w-2xl mx-auto mt-12">
         <h3 className="text-xl font-serif text-[#F3E7CC]">শেষে শুধু এটুকু</h3>
         <p className="text-sm text-[#A99A7C] leading-relaxed">
-          "হয়তো এটাই এই পৃষ্ঠার শেষ কথা। আবার... হয়তো নয়।"
+          "মনে হতে পারে হয়তো এখানেই শেষ, কিন্তু এই ওয়েবসাইট এক বিশাল মায়াজাল। এর প্রতিটি কোণে লুকিয়ে আছে বহু অনাবিষ্কৃত পথ... যা সময়ের সাথে একটু একটু করে মেলবে তার আসল রূপ।"
         </p>
         <p className="text-xs text-[#C9A45C] tracking-widest uppercase font-mono">
           — বাকিটুকু হয়তো সময়ই বলবে —
