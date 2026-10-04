@@ -11,9 +11,12 @@ const PREVIOUS_CHAPTER_MAP: Record<string, string> = {
   '/secret/clue-1': '/secret/intro',
   '/secret/clue-2': '/secret/clue-1',
   '/secret/diary': '/secret/clue-2',
-  '/secret/room': '/secret/diary',
+  '/secret/unsent-letter': '/secret/diary',
+  '/secret/room': '/secret/unsent-letter',
   '/secret/archive': '/secret/room',
-  '/secret/locked-door': '/secret/archive',
+  '/secret/dream-room': '/secret/archive',
+  '/secret/choice': '/secret/dream-room',
+  '/secret/locked-door': '/secret/choice',
   '/secret/letter': '/secret/locked-door',
 };
 

@@ -68,9 +68,9 @@ export default function ArchivePage() {
   const isAllUnlocked = unlockedNodes['m1'] && unlockedNodes['m2'] && unlockedNodes['m3'];
 
   const handleNext = () => {
-    markStepComplete('locked-door');
-    setStep('locked-door');
-    router.push('/secret/locked-door');
+    markStepComplete('dream-room');
+    setStep('dream-room');
+    router.push('/secret/dream-room');
   };
 
   return (
@@ -86,7 +86,7 @@ export default function ArchivePage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#211C16]/80 border border-[#A9824A]/30">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C9A45C] animate-pulse" />
             <span className="text-xs font-mono tracking-widest text-[#C9A45C]">
-              অধ্যায় ৫ / ৮
+              অধ্যায় ৬ / ১১
             </span>
           </div>
 

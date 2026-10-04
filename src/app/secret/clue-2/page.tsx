@@ -157,7 +157,7 @@ export default function Clue2Page() {
           className="space-y-3"
         >
           <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-[#A9824A]">
-            অধ্যায় ২ / ৮
+            অধ্যায় ২ / ১১
           </span>
           <h1 className="text-2xl sm:text-3xl font-serif text-[#F3E7CC] leading-snug">
             যে জিনিসটি সময়ের কাছে ছিল

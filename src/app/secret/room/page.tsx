@@ -141,7 +141,7 @@ export default function RoomPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#211C16]/80 border border-[#A9824A]/30">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C9A45C] animate-pulse" />
             <span className="text-xs font-mono tracking-widest text-[#C9A45C]">
-              অধ্যায় ৪ / ৮
+              অধ্যায় ৫ / ১১
             </span>
           </div>
 

@@ -20,9 +20,9 @@ export default function DiaryPage() {
   };
 
   const handleNext = () => {
-    markStepComplete('room');
-    setStep('room');
-    router.push('/secret/room');
+    markStepComplete('unsent-letter');
+    setStep('unsent-letter');
+    router.push('/secret/unsent-letter');
   };
 
   return (
@@ -31,7 +31,7 @@ export default function DiaryPage() {
         {/* Header */}
         <div className="space-y-2">
           <span className="text-xs font-mono uppercase tracking-widest text-[#C9A45C]">
-            অধ্যায় ৩ / ৮
+            অধ্যায় ৩ / ১১
           </span>
           <h1 className="text-3xl font-serif text-[#F3E7CC]">
             পুরোনো ডায়েরি

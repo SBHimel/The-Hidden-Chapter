@@ -29,7 +29,7 @@ export default function Clue1Page() {
         {/* Header */}
         <div className="space-y-2">
           <span className="text-xs font-mono uppercase tracking-widest text-[#C9A45C]">
-            অধ্যায় ১ / ৮
+            অধ্যায় ১ / ১১
           </span>
           <h1 className="text-3xl font-serif text-[#F3E7CC]">
             নীরবতার ভেতর যে শব্দ থাকে
